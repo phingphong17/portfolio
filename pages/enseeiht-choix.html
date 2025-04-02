@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENSEEIHT - Années d'études</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="../js/translations.js" defer></script>
+    <script src="../js/language-switcher.js" defer></script>
+</head>
+<body>
+    <div class="language-selector">
+        <img src="/Users/utilisateur/Desktop/cursor_ia/images/fr.png" alt="Français" class="language-btn" data-lang="fr">
+        <img src="/Users/utilisateur/Desktop/cursor_ia/images/en.png" alt="English" class="language-btn" data-lang="en">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html" data-translate="nav-home">Accueil</a></li>
+            <li><a href="a-propos.html" data-translate="nav-about">À Propos</a></li>
+            <li><a href="formation.html" data-translate="nav-formation">Formation</a></li>
+            <li class="dropdown">
+                <a href="experience.html" data-translate="nav-experience">Expérience</a>
+                <div class="dropdown-content">
+                    <!-- ... contenu du menu déroulant ... -->
+                </div>
+            </li>
+            <li><a href="contact.html" data-translate="nav-contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="school-years">
+        <div class="container">
+            <div class="back-button">
+                <a href="formation.html" class="btn-back">
+                    <i class="fas fa-arrow-left"></i>
+                    <span data-translate="back-button">Retour</span>
+                </a>
+            </div>
+            
+            <h2 data-translate="year-selection">Choisir une année</h2>
+            
+            <div class="year-selection">
+                <div class="year-card" onclick="window.location.href='enseeiht.html'">
+                    <img src="../images/logo.png" alt="Logo ENSEEIHT" class="school-logo">
+                    <h3 data-translate="first-year">1ère Année</h3>
+                    <p>2023-2024</p>
+                    <p data-translate="year1-projects">Projets 1ère année</p>
+                    <ul>
+                        <li><span data-translate="stats-proba">Statistiques et probabilités</span> 🎲</li>
+                        <li><span data-translate="info-calc">Informatique et calcul</span> 💻</li>
+                        <li><span data-translate="fluid-mech">Mécanique des fluides</span> 🌊</li>
+                        <li><span data-translate="thermo">Thermodynamique</span> 🌡️</li>
+                        <li><span data-translate="elasticity">Élasticité linéaire</span> 📐</li>
+                        <li><span data-translate="finite-vol">Différences et volumes finis</span> 🔍</li>
+                        <li><span data-translate="laminar-exp">Expérience laminaire : code Fluent</span> 🌀</li>
+                        <li><span data-translate="hydraulics">Bilans intégraux et APP hydraulique</span> 🔧</li>
+                    </ul>
+                </div>
+                
+                <div class="year-card" onclick="window.location.href='enseeiht2.html'">
+                    <img src="../images/logo.png" alt="Logo ENSEEIHT" class="school-logo">
+                    <h3 data-translate="second-year">2ème Année - Master 1 Énergétique et Procédés</h3>
+                    <p>2024-2025</p>
+                    <p data-translate="year2-projects">Projets 2ème année</p>
+                    <ul>
+                        <li><span data-translate="aero-project">Aérodynamique</span> 🛫</li>
+                        <li><span data-translate="industrial-project">Systèmes Industriels</span> 🏭</li>
+                        <li><span data-translate="multiscale-project">Processus Multi Échelles</span> 🔬</li>
+                        <li><span data-translate="numerical-project">Projet numérique</span> 💻</li>
+                        <li><span data-translate="personal-project">Projet d'initiative personnelle</span> ✨</li>
+                    </ul>
+                </div>
+                
+                <div class="year-card" onclick="window.location.href='enseeiht3.html'">
+                    <img src="../images/logo.png" alt="Logo ENSEEIHT" class="school-logo">
+                    <h3 data-translate="third-year">3ème Année - Master 2 Fluide et Procédés spécialité aérodynamique</h3>
+                    <p>2025-2026</p>
+                    <p data-translate="year3-projects">Projets 3ème année</p>
+                    <ul>
+                        <li><span data-translate="aero-application">Application Aérodynamique</span> 🛫</li>
+                        <li><span data-translate="energy-transition">Transition energétique</span> 🔄</li>
+                        <li><span data-translate="numerical-simulation">Simulation numérique</span> 💻</li>
+                        <li><span data-translate="reactive-media">Milieux Réactifs</span> 🔥</li>
+                        <li><span data-translate="fluid-particle">Écoulements fluide-particules</span> 🔍</li>
+                    </ul>
+                </div>
+                
+                <div class="year-card" onclick="window.location.href='enseeiht-double.html'">
+                    <div class="logos-container">
+                        <img src="../images/ups.png" alt="Logo UPS" class="school-logo">
+                        <img src="../images/insa.png" alt="Logo INSA" class="school-logo">
+                        <img src="../images/isae.png" alt="Logo ISAE" class="school-logo">
+                        <img src="../images/imt.png" alt="Logo IMT" class="school-logo">
+                    </div>
+                    <h3 data-translate="double-degree">Double diplôme école d'ingénieur X Master of Science (Dynamique des Fluides, Energétique et Transferts)</h3>
+                    <p>2025-2026</p>
+                    <p data-translate="double-degree-projects">Projets double diplôme</p>
+                    <ul>
+                        <li><span data-translate="turbulence">Turbulence</span> 🌀</li>
+                        <li><span data-translate="combustion">Combustion</span> 🌡️</li>
+                        <li><span data-translate="hydro-instability">Instabilités hydrodynamiques</span> 🌊</li>
+                        <li><span data-translate="incompressible-flow">Ecoulements incompressibles</span> 🔍</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="copyright-text">
+            <span class="copyright-symbol">©</span>
+            <p>2024 Tran Ugo - Tous droits réservés. Toute reproduction interdite sans autorisation.</p>
+        </div>
+    </footer>
+</body>
+</html> 

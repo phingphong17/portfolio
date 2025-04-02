@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio - Contact</title>
+    <link rel="stylesheet" href="../styles.css">
+    <!-- Ajout de Font Awesome pour l'icône LinkedIn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="../js/translations.js" defer></script>
+    <script src="../js/language-switcher.js" defer></script>
+</head>
+<body>
+    <div class="language-selector">
+        <img src="/Users/utilisateur/Desktop/cursor_ia/images/fr.png" alt="Français" class="language-btn" data-lang="fr">
+        <img src="/Users/utilisateur/Desktop/cursor_ia/images/en.png" alt="English" class="language-btn" data-lang="en">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html" data-translate="nav-home">Accueil</a></li>
+            <li><a href="a-propos.html" data-translate="nav-about">À Propos</a></li>
+            <li><a href="formation.html" data-translate="nav-formation">Formation</a></li>
+            <li><a href="experience.html" data-translate="nav-experience">Expérience</a></li>
+            <li><a href="contact.html" data-translate="nav-contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="contact">
+        <div class="container">
+            <h2 data-translate="contact-title">Contact</h2>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/ugo-tran-85277b292/" target="_blank" class="social-link">Mon profil LinkedIn</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-regular fa-envelope"></i>
+                    <a href="mailto:ugo.tran@etu.inp-n7.fr" class="social-link">ugo.tran@etu.inp-n7.fr</a>
+                </div>
+                <div class="contact-item cv-download">
+                    <i class="fas fa-file-pdf"></i>
+                    <a href="../images/CV.pdf" target="_blank" class="cv-link">
+                        Télécharger mon CV
+                    </a>
+                </div>
+            </div>
+
+            <form action="../php/send-email.php" method="POST" id="contact-form">
+                <input type="text" name="name" placeholder="Nom" data-translate="name" required>
+                <input type="email" name="email" placeholder="Email" data-translate="email" required>
+                <textarea name="message" placeholder="Message" data-translate="message" required></textarea>
+                <div id="form-status"></div>
+                <button type="submit" data-translate="send-message">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const status = document.getElementById('form-status');
+            
+            fetch('../php/send-email.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                status.innerHTML = data;
+                if(data.includes('succès')) {
+                    this.reset();
+                }
+            })
+            .catch(error => {
+                status.innerHTML = 'Une erreur est survenue. Veuillez réessayer.';
+            });
+        });
+    </script>
+
+    <footer>
+        <div class="copyright-text">
+            <span class="copyright-symbol">©</span>
+            <p>2024 Tran Ugo - Tous droits réservés. Toute reproduction interdite sans autorisation.</p>
+        </div>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/translations.js" defer></script>
+    <script src="js/language-switcher.js" defer></script>
+</head>
+<body>
+    <div class="language-selector">
+        <img src="/Users/utilisateur/Desktop/cursor_ia/images/fr.png" alt="Français" class="language-btn" data-lang="fr">
+        <img src="/Users/utilisateur/Desktop/cursor_ia/images/en.png" alt="English" class="language-btn" data-lang="en">
+    </div>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html" data-translate="nav-home">Accueil</a></li>
+            <li><a href="pages/a-propos.html" data-translate="nav-about">À Propos</a></li>
+            <li><a href="pages/formation.html" data-translate="nav-formation">Formation</a></li>
+            <li><a href="pages/experience.html" data-translate="nav-experience">Expérience</a></li>
+            <li><a href="pages/contact.html" data-translate="nav-contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="accueil">
+        <div class="container">
+            <h1 data-translate="title-name">Tran Ugo</h1>
+            <div class="wave-text">
+                <p>
+                    <span data-translate="student-title">Étudiant ingénieur en</span><br>
+                    <span class="fluid-text" data-translate="field-of-study">mécanique des fluides</span>
+                </p>
+            </div>
+            <img src="images/profil.jpg" alt="Photo de profil" class="profile-img">
+            <div class="quote-container">
+                <blockquote>
+                    <p class="quote-text" data-translate="quote-text">"Le succès n'est pas la clé du bonheur. Le bonheur est la clé du succès. Si vous aimez ce que vous faites, vous réussirez."</p>
+                    <footer class="quote-author" data-translate="quote-author">Albert Schweitzer</footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="copyright-text">
+            <span class="copyright-symbol">©</span>
+            <p>2024 Tran Ugo - Tous droits réservés. Toute reproduction interdite sans autorisation.</p>
+        </div>
+    </footer>
+</body>
+</html> 

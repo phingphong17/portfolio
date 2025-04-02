@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio - À Propos</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="../js/translations.js" defer></script>
+    <script src="../js/language-switcher.js" defer></script>
+</head>
+<body>
+    <div class="language-selector">
+        <img src="/Users/utilisateur/Desktop/cursor_ia/images2/fr.png" alt="Français" class="language-btn" data-lang="fr">
+        <img src="/Users/utilisateur/Desktop/cursor_ia/images1/en.png" alt="English" class="language-btn" data-lang="en">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html" data-translate="nav-home">Accueil</a></li>
+            <li><a href="a-propos.html" data-translate="nav-about">À Propos</a></li>
+            <li><a href="formation.html" data-translate="nav-formation">Formation</a></li>
+            <li class="dropdown">
+                <a href="experience.html" data-translate="nav-experience">Expérience</a>
+                <div class="dropdown-content">
+                    <a href="experience-pro.html">Expériences Professionnelles</a>
+                    <div class="sub-dropdown">
+                        <a href="#">Détails des expériences pro ▶</a>
+                        <div class="sub-dropdown-content">
+                            <a href="projet-allary.html">Chez Allary</a>
+                            <a href="projet-ofada.html">O'Fada</a>
+                            <a href="projet-poe.html">Hotel de Poé</a>
+                        </div>
+                    </div>
+                    <a href="experience-perso.html">Expériences Personnelles</a>
+                    <div class="sub-dropdown">
+                        <a href="#">Détails des expériences perso ▶</a>
+                        <div class="sub-dropdown-content">
+                            <a href="projet-f1.html">Club F1 UQAC</a>
+                            <a href="projet-sport.html">Bureau des Sports</a>
+                            <a href="projet-tipe.html">Projet TIPE</a>
+                            <a href="projet-surf.html">Big Banana Surf Club</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li><a href="contact.html" data-translate="nav-contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="a-propos">
+        <div class="container">
+            <h2 data-translate="about-title">À Propos de Moi</h2>
+            
+            <div class="about-content">
+                <div class="header-section">
+                    <div class="presentation-section">
+                        <h3 data-translate="presentation-title">Présentation</h3>
+                        <p data-translate="presentation-text">Né en Nouvelle-Calédonie, sportif compétiteur, sérieux et motivé, ayant le goût du challenge et une grande capacité d'adaptabilité. Actuellement étudiant ingénieur en 2e année à l'ENSEEIHT en mécanique des fluides.</p>
+                    </div>
+                    <div class="location-pin">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Toulouse</span>
+                        <img src="../images/fr.png" alt="Drapeau français" class="location-flag">
+                    </div>
+                </div>
+
+                <div class="skills-section">
+                    <h3 data-translate="key-skills">Compétences Clés</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4 data-translate="technical-skills">Techniques</h4>
+                            <ul>
+                                <li data-translate="cfd-skills">CFD (OpenFOAM, Fortran90, Ansys Fluent)</li>
+                                <li data-translate="cao-skills">CAO (SolidWorks, Autodesk Inventor, ICEM CFD)</li>
+                                <li data-translate="simulation-skills">Simulation multi-physique (Matlab, Scilab)</li>
+                                <li data-translate="programming-skills">Programmation (Python, SQL, HTML) </li>
+                                <li data-translate="other-skills">Autres (Epanet, Thermoptim)</li>
+                            </ul>
+                            <div class="skills-icons">
+                                <!-- CFD -->
+                                <div class="skill-icon">
+                                    <i class="fas fa-wind fa-2x"></i>
+                                    <span>OpenFOAM</span>
+                                </div>
+                                <div class="skill-icon">
+                                    <i class="fas fa-cube fa-2x"></i>
+                                    <span>ANSYS Fluent</span>
+                                </div>
+                                
+                                <!-- CAO -->
+                                <div class="skill-icon">
+                                    <i class="fas fa-drafting-compass fa-2x"></i>
+                                    <span>SolidWorks</span>
+                                </div>
+                                <div class="skill-icon">
+                                    <i class="fas fa-cubes fa-2x"></i>
+                                    <span>Autodesk</span>
+                                </div>
+                                
+                                <!-- Simulation -->
+                                <div class="skill-icon">
+                                    <i class="fas fa-calculator fa-2x"></i>
+                                    <span>Matlab</span>
+                                </div>
+                                <div class="skill-icon">
+                                    <i class="fas fa-chart-line fa-2x"></i>
+                                    <span>Scilab</span>
+                                </div>
+                                
+                                <!-- Programmation -->
+                                <div class="skill-icon">
+                                    <i class="fab fa-python fa-2x"></i>
+                                    <span>Python</span>
+                                </div>
+                                <div class="skill-icon">
+                                    <i class="fas fa-code fa-2x"></i>
+                                    <span>Fortran90</span>
+                                </div>
+                                <div class="skill-icon">
+                                    <i class="fab fa-html5 fa-2x"></i>
+                                    <span>HTML/CSS</span>
+                                </div>
+                                <div class="skill-icon">
+                                    <i class="fas fa-database fa-2x"></i>
+                                    <span>SQL</span>
+                                </div>
+                                
+                                <!-- Autres -->
+                                <div class="skill-icon">
+                                    <i class="fas fa-tint fa-2x"></i>
+                                    <span>Epanet</span>
+                                </div>
+                                <div class="skill-icon">
+                                    <i class="fas fa-temperature-high fa-2x"></i>
+                                    <span>Thermoptim</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4 data-translate="languages">Langues</h4>
+                            <ul>
+                                <li data-translate="french-level">Français (Natif)</li>
+                                <li data-translate="english-level">Anglais (Professionnel)</li>
+                                <li data-translate="spanish-level">Espagnol (Intermédiaire)</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4 data-translate="soft-skills">Soft Skills</h4>
+                            <ul>
+                                <li data-translate="teamwork">Travail en équipe</li>
+                                <li data-translate="adaptability">Adaptabilité</li>
+                                <li data-translate="curiosity">Curiosité</li>
+                                <li data-translate="motivation">Motivation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="objectives-section">
+                    <h3 data-translate="professional-objectives">Objectifs Professionnels</h3>
+                    <p data-translate="interested-jobs">Les métiers qui m'intéresse:</p>
+                    <ul>
+                        <li data-translate="cfd-job">Le domaine de la simulation numérique en mécanique des fluides</li>
+                        <li data-translate="thermal-job">Le domaine de la combustion et la thermique</li>
+                        <li data-translate="business-job">Ingénieur d'affaires, chargé de projet, chargé de mission</li>
+                    </ul>
+                </div>
+
+                <div class="interests-section">
+                    <h3 data-translate="interests">Centres d'Intérêt</h3>
+                    <ul>
+                        <li data-translate="competitive-sports">Sports en compétition : Surf, Kitesurf, Badminton, Futsal, Trail</li>
+                        <li data-translate="software">Logiciels : Gopro, Imovie, Cursor, FL studio</li>
+                        <li data-translate="travel">Voyages et découvertes culturelles: Echange en Australie, Nouvelle-Zélande, Vietnam</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="copyright-text">
+            <span class="copyright-symbol">©</span>
+            <p>2024 Tran Ugo - Tous droits réservés. Toute reproduction interdite sans autorisation.</p>
+        </div>
+    </footer>
+</body>
+</html> 
