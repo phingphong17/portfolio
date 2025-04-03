@@ -203,7 +203,7 @@ button:hover {
 
 /* Styles pour les sections */
 #accueil {
-    background-image: url('/Users/utilisateur/Desktop/cursor_ia/images/background.jpg');
+    background-image: url('./images/background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -236,7 +236,7 @@ button:hover {
 
 #a-propos {
     background-color: white;
-    background-image: url('/Users/utilisateur/Desktop/cursor_ia/images/background.jpg');
+    background-image: url('./images/background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -284,7 +284,7 @@ button:hover {
 .school-years,
 .school-details,
 .project-details {
-    background-image: url('/Users/utilisateur/Desktop/cursor_ia/images/background.jpg');
+    background-image: url('./images/background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
