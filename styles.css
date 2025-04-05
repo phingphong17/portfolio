@@ -338,6 +338,217 @@ button:hover {
     nav ul li {
         margin: 0.5rem 0;
     }
+
+    .language-selector {
+        top: 10px;
+        right: 10px;
+    }
+
+    .language-btn {
+        width: 25px;
+        height: 16px;
+    }
+
+    nav {
+        padding: 0.5rem 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 0.8rem;
+        margin: 0;
+    }
+
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        background: transparent;
+    }
+
+    .sub-dropdown-content {
+        position: static;
+        width: 100%;
+        margin-left: 1rem;
+    }
+
+    /* Ajustements pour le contenu principal */
+    .container {
+        padding: 0 1rem;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    /* Ajustements pour les cartes et grilles */
+    .education-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .school-logo {
+        margin: 0 auto 1rem auto;
+    }
+
+    .year-selection {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .year-card {
+        padding: 1rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-icons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skill-icon {
+        margin: 0.5rem;
+    }
+
+    /* Ajustements pour les images */
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .experience-images img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Ajustements pour le texte */
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    /* Ajustements pour le footer */
+    footer {
+        padding: 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    /* Ajustements pour les projets */
+    .project-card {
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
+    .project-description {
+        padding: 1rem;
+    }
+
+    .project-gallery {
+        padding: 0;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /* Ajustements pour les expériences */
+    .experience-card {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    .experience-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-images figure {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    /* Ajustements pour la timeline */
+    .timeline::before {
+        left: 0;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 2rem;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+
+    .timeline-date {
+        width: auto;
+        position: relative;
+        top: 0;
+        transform: none;
+        margin-bottom: 1rem;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-date,
+    .timeline-item:nth-child(even) .timeline-date {
+        left: 0;
+        right: auto;
+    }
+
+    /* Ajustements pour les citations */
+    .quote-container {
+        padding: 1rem;
+    }
+
+    blockquote p {
+        font-size: 1rem;
+    }
+
+    .quote-author {
+        font-size: 0.8rem;
+    }
+
+    /* Ajustements pour le formulaire de contact */
+    form {
+        padding: 1rem;
+    }
+
+    input, textarea {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    button {
+        width: 100%;
+    }
 }
 
 .experience-buttons {
