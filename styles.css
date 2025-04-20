@@ -289,7 +289,7 @@ button:hover {
     background-position: center;
     background-attachment: fixed;
     min-height: 100vh;
-    padding-top: 100px;
+    padding-top: 80px;
     position: relative;
 }
 
@@ -340,60 +340,131 @@ button:hover {
     }
 
     .language-selector {
+        position: fixed;
         top: 10px;
         right: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        z-index: 1000;
     }
 
-    .language-btn {
-        width: 25px;
-        height: 16px;
+    .language-selector img {
+        width: 30px;
+        height: 20px;
     }
 
     nav {
-        padding: 0.5rem 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 10px 0;
+        z-index: 999;
     }
 
     nav ul {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
         align-items: center;
         padding: 0;
+        margin: 0;
+        list-style: none;
     }
 
     nav ul li {
-        margin: 0.5rem 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    nav ul li a {
-        display: block;
-        padding: 0.8rem;
         margin: 0;
     }
 
-    .dropdown-content {
-        position: static;
-        width: 100%;
-        box-shadow: none;
-        background: transparent;
+    nav ul li a {
+        padding: 8px 12px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
     }
 
-    .sub-dropdown-content {
-        position: static;
-        width: 100%;
-        margin-left: 1rem;
+    nav ul li a i {
+        margin-right: 5px;
     }
 
-    /* Ajustements pour le contenu principal */
     .container {
-        padding: 0 1rem;
+        padding: 80px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
-    section {
-        padding: 60px 0;
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        margin: 20px auto;
     }
 
-    /* Ajustements pour les cartes et grilles */
+    .quote-container {
+        margin-top: 20px;
+    }
+
+    .school-years, .project-years {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .school-year, .project-year {
+        padding: 15px;
+        margin: 0;
+    }
+
+    .school-details, .project-details {
+        padding: 80px 20px 20px;
+    }
+
+    .back-button {
+        margin-bottom: 20px;
+    }
+
+    .education-content, .project-content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .education-info, .project-info {
+        padding: 15px;
+    }
+
+    .skills-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .skill-item {
+        padding: 8px;
+    }
+
+    .contact-form {
+        padding: 80px 20px 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
     .education-item {
         flex-direction: column;
         text-align: center;
@@ -548,6 +619,141 @@ button:hover {
 
     button {
         width: 100%;
+    }
+
+    .about-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .presentation-section {
+        grid-column: 1 / -1;
+        margin-bottom: 15px;
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin: 10px 0;
+    }
+
+    .skill-category {
+        background: white;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .skill-category h4 {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+
+    .skill-category ul li {
+        font-size: 0.85rem;
+        margin: 4px 0;
+        padding-left: 1.2rem;
+    }
+
+    .skill-category ul li:before {
+        font-size: 0.8rem;
+    }
+
+    .skills-icons {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 8px;
+        padding: 8px 0;
+    }
+
+    .skill-icon {
+        padding: 5px;
+    }
+
+    .skill-icon img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .skill-icon span {
+        font-size: 0.65rem;
+    }
+
+    .objectives-section, .interests-section {
+        grid-column: 1 / -1;
+        margin-top: 15px;
+    }
+
+    .objectives-section ul, .interests-section ul {
+        padding-left: 1.2rem;
+    }
+
+    .objectives-section li, .interests-section li {
+        font-size: 0.85rem;
+        margin: 4px 0;
+    }
+
+    .objectives-section li:before, .interests-section li:before {
+        font-size: 0.8rem;
+        left: -1.2rem;
+    }
+
+    /* Ajustements pour les langues et techniques */
+    .languages-section, .techniques-section {
+        padding: 10px;
+        margin: 0;
+    }
+
+    .languages-section h3, .techniques-section h3 {
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+
+    .languages-section ul, .techniques-section ul {
+        font-size: 0.85rem;
+    }
+
+    .languages-section li, .techniques-section li {
+        margin: 4px 0;
+    }
+}
+
+/* Styles pour les très petits écrans */
+@media (max-width: 480px) {
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        flex: 1 0 50%;
+        text-align: center;
+    }
+
+    .skills-list {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 100px 15px 15px;
+    }
+
+    .school-details, .project-details, .contact-form {
+        padding: 100px 15px 15px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .languages-section, .techniques-section {
+        grid-column: 1 / -1;
     }
 }
 
@@ -946,18 +1152,15 @@ button:hover {
 
 .project-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .project-card {
     background-color: #ffffff;
     border-radius: 10px;
-    padding: 2rem;
+    padding: 1.5rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
     height: 100%;
@@ -965,35 +1168,39 @@ button:hover {
     flex-direction: column;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
+.project-card h4 {
+    color: #0a192f;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #0077b5;
 }
 
-.project-card h4 {
+.project-description {
+    flex: 1;
+    margin: 1rem 0;
+}
+
+.project-description p {
     color: #333;
     margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-weight: 500;
 }
 
-.project-card p {
-    color: #666;
-    line-height: 1.5;
-}
-
-.project-card ul {
+.project-description ul {
     list-style-type: none;
-    padding-left: 1rem;
-    margin-top: 1rem;
+    padding-left: 1.2rem;
 }
 
-.project-card li {
+.project-description li {
     position: relative;
+    margin: 0.8rem 0;
     padding-left: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #666;
+    color: #4a5568;
+    line-height: 1.4;
 }
 
-.project-card li:before {
+.project-description li:before {
     content: "▹";
     position: absolute;
     left: 0;
@@ -1052,101 +1259,55 @@ button:hover {
 .year-selection {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 2rem;
-    margin: 2rem 0;
-}
-
-.year-selection .year-card:nth-child(1) {
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.year-selection .year-card:nth-child(2) {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.year-selection .year-card:nth-child(3) {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.year-selection .year-card:nth-child(4) {
-    grid-column: 2;
-    grid-row: 2;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
 }
 
 .year-card {
     background: white;
     border-radius: 8px;
-    padding: 2rem;
+    padding: 1.5rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
-    cursor: pointer;
     position: relative;
-    padding-top: 60px;  /* Espace pour le logo */
-}
-
-.year-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    background: linear-gradient(to right, #f8f9fa, #ffffff);
+    padding-top: 45px;
 }
 
 .year-card h3 {
-    color: #0a192f;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #0077b5;
-    padding-bottom: 0.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
 }
 
 .year-card p {
-    color: #333;
-    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
 }
 
 .year-card ul {
-    list-style-type: none;
-    padding-left: 1.5rem;
+    padding-left: 1.2rem;
 }
 
 .year-card li {
-    position: relative;
-    margin: 0.5rem 0;
-    color: #333;
-}
-
-.year-card li:before {
-    content: "▹";
-    position: absolute;
-    left: -1.5rem;
-    color: #0077b5;
+    font-size: 0.9rem;
+    margin: 0.4rem 0;
 }
 
 .school-logo {
-    width: 50px;
+    width: 40px;
     height: auto;
     position: absolute;
-    top: 10px;
+    top: 8px;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .logos-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
+    top: 8px;
+    gap: 8px;
 }
 
 .logos-container .school-logo {
-    position: static;
-    transform: none;
+    width: 35px;
 }
 
 .language-selector {
@@ -1207,101 +1368,137 @@ button:hover {
     color: #333;
 }
 
-.experience-card {
-    max-width: 1000px;
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    padding-top: 80px;
+    max-width: 1200px;
     margin: 0 auto;
-    background-color: white;
-    border-radius: 10px;
-    padding: 2rem;
+}
+
+.experience-card {
+    background: white;
+    border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    padding: 15px;
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s ease;
 }
 
 .experience-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-.experience-images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin: 1rem 0;
-}
-
-.experience-images figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    margin: 0;
-}
-
-.experience-images figcaption {
-    color: #666;
-    font-size: 0.9rem;
-    text-align: center;
-}
-
-.experience-images img {
-    width: 400px;
-    height: auto;
-    max-height: 300px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.experience-images img:hover {
-    transform: scale(1.05);
-}
-
-/* Style spécifique pour les images du projet TPE */
-.experience-card[data-project="tpe"] .experience-images img {
-    width: 300px;
-    max-height: 225px;
-}
-
-/* Ajustement pour les images de type schéma/diagramme */
-.experience-images img[src*="tipe"] {
-    object-fit: contain;
-    background-color: #fff;
-    padding: 10px;
-}
-
-.card-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1rem;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
 .company-logo {
-    width: 80px;
-    height: auto;
+    width: 50px;
+    height: 50px;
     object-fit: contain;
+    border-radius: 6px;
 }
 
-.experience-grid {
+.experience-info {
+    flex: 1;
+}
+
+.experience-header {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    margin-top: 2rem;
+    gap: 5px;
 }
 
-/* Style responsive pour les petits écrans */
-@media (max-width: 1200px) {
-    .project-list {
+.experience-header h4 {
+    font-size: 1.1rem;
+    color: #0a192f;
+    margin: 0;
+}
+
+.location {
+    font-size: 0.9rem;
+    color: #4a5568;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.location i {
+    color: #0077b5;
+    font-size: 0.9rem;
+}
+
+.period {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+/* Styles pour mobile */
+@media (max-width: 768px) {
+    .experience-grid {
         grid-template-columns: 1fr;
+        padding: 15px;
+        padding-top: 70px;
+        gap: 12px;
+    }
+
+    .experience-card {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .company-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .experience-header h4 {
+        font-size: 1rem;
+    }
+
+    .location {
+        font-size: 0.85rem;
+    }
+
+    .period {
+        font-size: 0.8rem;
     }
 }
 
-/* Style pour le footer */
+/* Styles pour très petits écrans */
+@media (max-width: 480px) {
+    .experience-grid {
+        padding: 10px;
+        padding-top: 60px;
+        gap: 10px;
+    }
+
+    .experience-card {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .company-logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    .experience-header h4 {
+        font-size: 0.95rem;
+    }
+
+    .location {
+        font-size: 0.8rem;
+    }
+
+    .period {
+        font-size: 0.75rem;
+    }
+}
+
+/* Styles pour le footer */
 footer {
     background: linear-gradient(135deg, #0a192f, #112240);
     color: #ffffff;
@@ -1364,45 +1561,39 @@ footer .copyright-symbol {
 
 .skills-icons {
     display: flex;
-    flex-wrap: nowrap;
-    gap: 1rem;
-    margin-top: 0.5rem;
-    padding: 1rem 0;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px 0;
     justify-content: flex-start;
-    width: 100%;
 }
 
 .skill-icon {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.3rem;
-    padding: 0.3rem;
-    width: auto;
-    border-radius: 8px;
+    gap: 4px;
+    padding: 4px;
+    border-radius: 6px;
     background-color: rgba(255, 255, 255, 0.9);
     transition: transform 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.skill-icon i {
-    font-size: 1rem;
-    color: #0a192f;
-}
-
-.skill-icon:hover {
-    transform: translateY(-5px);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    width: 60px;
 }
 
 .skill-icon img {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     object-fit: contain;
 }
 
 .skill-icon span {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     text-align: center;
+    line-height: 1;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .quote-container {
@@ -1456,74 +1647,118 @@ blockquote p {
 /* Style spécifique pour les logos de la page formation */
 .education-item .school-logo {
     width: auto;
-    height: 80px;
+    height: 40px;
     position: static;
     transform: none;
-    margin-right: 20px;
+    margin-right: 15px;
+    object-fit: contain;
 }
 
-/* Conserver la mise en page horizontale pour les items de formation */
+/* Style pour les items de formation */
 .education-item {
     display: flex;
     align-items: center;
-    padding: 2rem;
-    margin-bottom: 2rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
     background: white;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
 }
 
-/* Timeline styles */
+.education-details h3 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.education-details p {
+    font-size: 0.9rem;
+    margin: 0.2rem 0;
+}
+
+/* Ajustements pour mobile */
+@media (max-width: 768px) {
+    .education-item {
+        padding: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .education-item .school-logo {
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .education-details h3 {
+        font-size: 0.9rem;
+    }
+
+    .education-details p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Ajustements pour très petits écrans */
+@media (max-width: 480px) {
+    .education-item {
+        padding: 0.6rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .education-item .school-logo {
+        height: 25px;
+        margin-right: 8px;
+    }
+
+    .education-details h3 {
+        font-size: 0.85rem;
+    }
+
+    .education-details p {
+        font-size: 0.75rem;
+    }
+}
+
+/* Styles pour la timeline des expériences */
 .timeline {
-    position: relative;
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
 .timeline::before {
-    content: '';
-    position: absolute;
-    width: 2px;
-    background: #0077b5;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -1px;
+    display: none;
 }
 
 .timeline-item {
-    padding: 15px 30px;
+    width: 100%;
+    padding: 15px;
     position: relative;
-    width: 50%;
     left: 0;
-    clear: both;
+    margin-bottom: 30px;
 }
 
 .timeline-item:nth-child(even) {
-    left: 50%;
+    left: 0;
 }
 
 .timeline-date {
-    position: absolute;
-    width: 150px;
-    text-align: center;
-    padding: 10px 20px;
+    position: relative;
+    width: auto;
+    text-align: left;
+    padding: 8px 16px;
     background: #0077b5;
     color: white;
-    border-radius: 20px;
+    border-radius: 8px;
     font-weight: bold;
-    top: 50%;
-    transform: translateY(-50%);
+    margin-bottom: 15px;
+    display: inline-block;
+    transform: none;
 }
 
-.timeline-item:nth-child(odd) .timeline-date {
-    right: -75px;
-}
-
+.timeline-item:nth-child(odd) .timeline-date,
 .timeline-item:nth-child(even) .timeline-date {
-    left: -75px;
+    left: 0;
+    right: auto;
 }
 
 .timeline-content {
@@ -1531,9 +1766,13 @@ blockquote p {
     background: white;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 
-/* Card styles */
+.timeline-content:hover {
+    transform: translateY(-5px);
+}
+
 .card-header {
     display: flex;
     justify-content: space-between;
@@ -1541,6 +1780,17 @@ blockquote p {
     margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom: 2px solid #f0f0f0;
+}
+
+.card-header h3 {
+    margin: 0;
+    color: #0a192f;
+}
+
+.company-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
 }
 
 .card-body {
@@ -1557,26 +1807,93 @@ blockquote p {
     color: #0a192f;
 }
 
-.tasks h4, .achievements h4 {
+.tasks h4 {
     color: #0077b5;
     margin-bottom: 10px;
 }
 
-.tasks ul, .achievements ul {
+.tasks ul {
     list-style-type: none;
     padding-left: 20px;
 }
 
-.tasks li, .achievements li {
+.tasks li {
     position: relative;
     margin-bottom: 8px;
+    color: #4a5568;
 }
 
-.tasks li:before, .achievements li:before {
+.tasks li:before {
     content: "▹";
     position: absolute;
     left: -20px;
     color: #0077b5;
+}
+
+/* Ajustements pour mobile */
+@media (max-width: 768px) {
+    .timeline {
+        padding: 10px;
+    }
+
+    .timeline-item {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .timeline-date {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    .timeline-content {
+        padding: 15px;
+    }
+
+    .card-header {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .company-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .card-body {
+        gap: 10px;
+    }
+}
+
+/* Ajustements pour très petits écrans */
+@media (max-width: 480px) {
+    .timeline-item {
+        padding: 5px;
+        margin-bottom: 15px;
+    }
+
+    .timeline-date {
+        font-size: 0.85rem;
+        padding: 5px 10px;
+    }
+
+    .timeline-content {
+        padding: 12px;
+    }
+
+    .company-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .position {
+        font-size: 0.9rem;
+    }
+
+    .tasks li {
+        font-size: 0.85rem;
+    }
 }
 
 /* Style pour le marqueur de localisation */
@@ -1592,26 +1909,6 @@ blockquote p {
     margin: 20px 0;
 }
 
-.pin {
-    position: relative;
-    width: 20px;
-    height: 20px;
-    background-color: #e74c3c;
-    border-radius: 50%;
-}
-
-.pin::after {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    transform: translateX(-50%) rotate(45deg);
-    width: 12px;
-    height: 12px;
-    background-color: #e74c3c;
-    clip-path: polygon(100% 0, 0 0, 50% 100%);
-}
-
 .location-text {
     display: flex;
     align-items: center;
@@ -1623,6 +1920,8 @@ blockquote p {
 .flag {
     width: 20px;
     height: auto;
+    max-height: 15px;
+    object-fit: contain;
 }
 
 /* Style pour l'en-tête de la section À propos */
@@ -1645,55 +1944,27 @@ blockquote p {
     transition: all 0.3s ease;
 }
 
-.location-pin:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-}
-
-.location-pin i {
-    color: #e74c3c;
-    font-size: 1.2rem;
-    animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-3px);
-    }
-}
-
 .location-flag {
     width: 20px;
     height: auto;
+    max-height: 15px;
     border-radius: 3px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    object-fit: contain;
 }
 
-.quote-section {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    text-align: center;
-    padding: 40px 0;
-    background-color: #f8f9fa;
+/* Ajustements pour mobile */
+@media (max-width: 768px) {
+    .flag, .location-flag {
+        width: 16px;
+        max-height: 12px;
+    }
 }
 
-.quote-text {
-    font-size: 1.8em;
-    font-weight: 300;
-    color: #333;
-    line-height: 1.6;
-    letter-spacing: 0.5px;
-    margin-bottom: 20px;
-}
-
-.quote-author {
-    font-size: 1em;
-    color: #666;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 400;
-    margin-top: 15px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+/* Ajustements pour très petits écrans */
+@media (max-width: 480px) {
+    .flag, .location-flag {
+        width: 14px;
+        max-height: 10px;
+    }
 } 

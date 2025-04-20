@@ -1,5 +1,3 @@
-// Supprimer tout le contenu du fichier scripts.js 
-
 // Gestion du menu burger
 document.addEventListener('DOMContentLoaded', function() {
     const burgerMenu = document.createElement('div');
@@ -24,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
             padding: 10px;
             position: fixed;
             top: 20px;
-            right: 20px;
+            left: 20px;
             z-index: 1000;
         }
 
@@ -82,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
             nav {
                 position: fixed;
                 top: 0;
-                right: -100%;
+                left: -100%;
                 width: 80%;
                 height: 100vh;
                 background: rgba(0, 0, 0, 0.9);
@@ -93,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             nav.active {
-                right: 0;
+                left: 0;
             }
 
             nav a {
