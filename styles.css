@@ -69,12 +69,13 @@ section {
     height: 250px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: center 30%;
+    object-position: center;
     border: 3px solid #333;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     margin: 20px auto;
     display: block;
     position: relative;
+    background-color: #fff;
 }
 
 .profile-img::before {
@@ -401,6 +402,8 @@ button:hover {
         height: 200px;
         margin: 15px auto;
         border: 2px solid #333;
+        object-fit: cover;
+        object-position: center;
     }
 
     .quote-container {
@@ -762,6 +765,8 @@ button:hover {
         height: 180px;
         margin: 10px auto;
         border: 2px solid #333;
+        object-fit: cover;
+        object-position: center;
     }
 }
 
