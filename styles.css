@@ -397,9 +397,10 @@ button:hover {
     }
 
     .profile-img {
-        width: 150px;
-        height: 150px;
-        margin: 20px auto;
+        width: 200px;
+        height: 200px;
+        margin: 15px auto;
+        border: 2px solid #333;
     }
 
     .quote-container {
@@ -754,6 +755,13 @@ button:hover {
 
     .languages-section, .techniques-section {
         grid-column: 1 / -1;
+    }
+
+    .profile-img {
+        width: 180px;
+        height: 180px;
+        margin: 10px auto;
+        border: 2px solid #333;
     }
 }
 
