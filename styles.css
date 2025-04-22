@@ -75,7 +75,8 @@ section {
     margin: 20px auto;
     display: block;
     position: relative;
-    background-color: #fff;
+    background-color: #f8f9fa;
+    z-index: 2;
 }
 
 .profile-img::before {
@@ -87,7 +88,6 @@ section {
     bottom: -5px;
     border-radius: 50%;
     background: linear-gradient(45deg, #0077b5, transparent);
-    animation: waveRing 2s ease-in-out infinite;
     z-index: -1;
 }
 
@@ -404,6 +404,7 @@ button:hover {
         border: 2px solid #333;
         object-fit: cover;
         object-position: center;
+        background-color: #f8f9fa;
     }
 
     .quote-container {
@@ -767,6 +768,7 @@ button:hover {
         border: 2px solid #333;
         object-fit: cover;
         object-position: center;
+        background-color: #f8f9fa;
     }
 }
 
