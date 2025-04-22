@@ -77,6 +77,18 @@ section {
     position: relative;
     background-color: #f8f9fa;
     z-index: 2;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+}
+
+picture {
+    display: block;
+    width: 250px;
+    height: 250px;
+    margin: 20px auto;
+    position: relative;
 }
 
 .profile-img::before {
@@ -397,14 +409,17 @@ button:hover {
         gap: 20px;
     }
 
-    .profile-img {
+    picture {
         width: 200px;
         height: 200px;
         margin: 15px auto;
+    }
+
+    .profile-img {
+        width: 200px;
+        height: 200px;
+        margin: 0;
         border: 2px solid #333;
-        object-fit: cover;
-        object-position: center;
-        background-color: #f8f9fa;
     }
 
     .quote-container {
@@ -761,14 +776,17 @@ button:hover {
         grid-column: 1 / -1;
     }
 
-    .profile-img {
+    picture {
         width: 180px;
         height: 180px;
         margin: 10px auto;
+    }
+
+    .profile-img {
+        width: 180px;
+        height: 180px;
+        margin: 0;
         border: 2px solid #333;
-        object-fit: cover;
-        object-position: center;
-        background-color: #f8f9fa;
     }
 }
 

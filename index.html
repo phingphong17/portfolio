@@ -35,7 +35,12 @@
                     <span class="fluid-text" data-translate="field-of-study">mécanique des fluides</span>
                 </p>
             </div>
-            <img src="images/profil.jpg" alt="Photo de profil" class="profile-img" loading="eager" decoding="async" fetchpriority="high">
+            <picture>
+                <source srcset="images/profil.webp" type="image/webp">
+                <source srcset="images/profil.png" type="image/png">
+                <source srcset="images/profil.jpg" type="image/jpeg">
+                <img src="images/profil.jpg" alt="Photo de profil" class="profile-img" loading="eager" decoding="async" fetchpriority="high">
+            </picture>
             <div class="quote-container">
                 <blockquote>
                     <p class="quote-text" data-translate="quote-text">"Le succès n'est pas la clé du bonheur. Le bonheur est la clé du succès. Si vous aimez ce que vous faites, vous réussirez."</p>
