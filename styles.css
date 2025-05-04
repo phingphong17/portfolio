@@ -345,13 +345,55 @@ button:hover {
         text-align: center;
     }
 
+    nav {
+        padding: 0.5rem 0;
+    }
+
     nav ul {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
     }
 
     nav ul li {
-        margin: 0.5rem 0;
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .container {
+        padding: 80px 15px 15px;
+    }
+
+    .profile-container {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 1.5rem;
+        border: 2px solid #000;
+    }
+
+    .wave-text p {
+        font-size: 1.2rem;
+    }
+
+    .fluid-text {
+        font-size: 1.5rem;
+    }
+
+    .quote-container {
+        padding: 20px 15px;
+    }
+
+    blockquote p {
+        font-size: 1rem;
+    }
+
+    .quote-author {
+        font-size: 0.75rem;
     }
 
     .language-selector {
@@ -415,12 +457,6 @@ button:hover {
         width: 200px;
         height: 200px;
         margin: 15px auto;
-    }
-
-    .profile-container {
-        width: 200px;
-        height: 200px;
-        border: 2px solid #000;
     }
 
     .quote-container {
@@ -746,20 +782,57 @@ button:hover {
 /* Styles pour les très petits écrans */
 @media (max-width: 480px) {
     nav ul {
-        flex-wrap: wrap;
+        gap: 0.3rem;
     }
 
-    nav ul li {
-        flex: 1 0 50%;
-        text-align: center;
+    nav ul li a {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
+    }
+
+    .container {
+        padding: 70px 10px 10px;
+    }
+
+    .profile-container {
+        width: 180px;
+        height: 180px;
+        margin: 0 auto 1rem;
+        border: 2px solid #000;
+    }
+
+    .wave-text p {
+        font-size: 1rem;
+    }
+
+    .fluid-text {
+        font-size: 1.3rem;
+    }
+
+    .quote-container {
+        padding: 15px 10px;
+    }
+
+    blockquote p {
+        font-size: 0.9rem;
+    }
+
+    .quote-author {
+        font-size: 0.7rem;
+    }
+
+    .language-selector {
+        top: 10px;
+        right: 10px;
+    }
+
+    .language-btn {
+        width: 25px;
+        height: 15px;
     }
 
     .skills-list {
         grid-template-columns: 1fr;
-    }
-
-    .container {
-        padding: 100px 15px 15px;
     }
 
     .school-details, .project-details, .contact-form {
