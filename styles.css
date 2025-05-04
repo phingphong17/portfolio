@@ -67,12 +67,13 @@ section {
 .profile-container {
     width: 250px;
     height: 250px;
-    margin: 20px auto;
-    position: relative;
     border-radius: 50%;
     overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin: 0 auto 2rem;
+    border: 2px solid #000;
     background-color: #f8f9fa;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 .profile-img {
@@ -419,7 +420,7 @@ button:hover {
     .profile-container {
         width: 200px;
         height: 200px;
-        margin: 15px auto;
+        border: 2px solid #000;
     }
 
     .quote-container {
@@ -521,7 +522,7 @@ button:hover {
     .profile-container {
         width: 200px;
         height: 200px;
-        margin: 15px auto;
+        border: 2px solid #000;
     }
 
     .experience-images img {
@@ -786,7 +787,7 @@ button:hover {
     .profile-container {
         width: 180px;
         height: 180px;
-        margin: 10px auto;
+        border: 2px solid #000;
     }
 }
 
